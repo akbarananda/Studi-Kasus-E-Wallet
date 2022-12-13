@@ -1,9 +1,14 @@
+import controler.LoginPage;
+import model.EWallet;
+import model.Storage;
+
 public class App {
     public static void main(String[] args) {
 
-        Auth.initialUser();
+       Storage.setInitialItem();
+       EWallet.initialUser();
 
-        new LoginPage();
+       new LoginPage();
 
     }
 }
